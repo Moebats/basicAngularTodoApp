@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="Todo">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+    <script src="App.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  
+  <body>
+    
+    <div class="container" id="mainView" ng-controller="todoController">
+      <div class+"row">
+
+        <div class="col-sm-10">
+
+          <div id="dropBox">
+
+          <h4>Welcome to the Todo List App in AngularJS</h4>
+
+            <div>Drop your text file here with a list of todos in JSON format...</div> 
+          </div>
+          <div id="dropBox2"></div>
+          <br>
+
+            <input id="fileInput" type="file" onchange="processFiles(this.files)">
+
+            <form name="form" ng-submit="addTodo()">
+
+            <br>
+            <br>
+
+              Enter a task below to add to the list:
+              <input type="text" name="newTask" ng-model="newTask" required> <br>
+
+              Enter a description for the Task below: 
+              <input type="text" name="newDescription" ng-model="newDescription" required>
+              <button ng-disabled="form.$invalid">Add Task</button>
+
+            </form>
+            <br> <br>
+              
+              <div ng-include="taskView"></div>
+              <br>
+              <div ng-include="taskViewCompleted"></div>
+
+        </div>   
+
+      </div>
+  
+    </div>
+
+  </body>
+</html>

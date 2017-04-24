@@ -1,0 +1,16 @@
+[{
+  "task": "Task1",
+  "completion": false,
+  "description": "Take dog for a walk"
+}, 
+{
+  "task": "Task2",
+  "completion": false,
+  "description": "Go shopping"
+}, 
+{
+  "task": "Task3",
+  "completion": false,
+  "description": "Dinner"
+}
+]

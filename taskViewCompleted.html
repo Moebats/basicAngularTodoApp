@@ -1,0 +1,14 @@
+
+    	
+		<h4>List of completed tasks: </h4>
+    	<ul class="list-group">
+    		
+    		<li ng-repeat="todo in completedTodos track by $index" class="list-group-item list-group-item-success">
+    			<b>Task:</b> {{todo.task}}, <b>Description:</b> {{todo.description}}
+
+    			<input type="checkbox" checked onclick="return false;">
+    			<button ng-click="removeCompletedTodo(todo)" class="btn btn-danger">Remove Task</button>
+
+    		</li>
+
+    	</ul>

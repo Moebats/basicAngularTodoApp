@@ -1,0 +1,29 @@
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  float: right;
+  margin: 20px;
+}
+
+/* Might want to wrap a span around your checkbox text */
+.checkboxtext
+{
+  /* Checkbox text */
+  font-size: 110%;
+  float: right;
+  padding: 20px;
+
+}
+button{
+	float: right;
+	padding: auto;
+}
+
+.list-group-item{
+	display: block;
+	padding: 20px;
+}
